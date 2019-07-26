@@ -67,7 +67,6 @@
 				CA51F03122EB606D007DACA3 /* View */,
 				CA51F01E22EB6012007DACA3 /* AppDelegate.swift */,
 				CA51F02522EB6013007DACA3 /* Assets.xcassets */,
-				CA51F02722EB6013007DACA3 /* LaunchScreen.storyboard */,
 				CA51F02A22EB6013007DACA3 /* Info.plist */,
 			);
 			path = TableAndScroll;
@@ -85,6 +84,7 @@
 		CA51F03122EB606D007DACA3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CA51F02722EB6013007DACA3 /* LaunchScreen.storyboard */,
 				CA51F02222EB6012007DACA3 /* Main.storyboard */,
 			);
 			path = View;

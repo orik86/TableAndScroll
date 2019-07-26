@@ -54,6 +54,7 @@ class TableViewController: UITableViewController {
             
             do {
                 self.imagesCollection = try JSONDecoder().decode([imageOptions].self, from: data)
+                //print(self.imagesCollection)
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }

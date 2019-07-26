@@ -206,20 +206,30 @@
                                             <constraint firstAttribute="trailing" secondItem="m2Y-k9-oUk" secondAttribute="trailing" id="prA-ts-JcU"/>
                                         </constraints>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyb-rr-Nz8">
+                                        <rect key="frame" x="10" y="566.5" width="384" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="goToUrl:" destination="g6i-tf-AiC" eventType="touchUpInside" id="xq1-tX-Zet"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="pbf-rA-hYO" firstAttribute="leading" secondItem="6dn-01-lXl" secondAttribute="leading" constant="5" id="31Z-mX-PeH"/>
                                     <constraint firstItem="rt3-OM-w76" firstAttribute="centerX" secondItem="6dn-01-lXl" secondAttribute="centerX" id="5k9-Y2-1AF"/>
                                     <constraint firstItem="jUu-Yr-N79" firstAttribute="centerY" secondItem="6dn-01-lXl" secondAttribute="centerY" multiplier="0.6" id="7gt-0x-XVc"/>
+                                    <constraint firstItem="gyb-rr-Nz8" firstAttribute="top" secondItem="uQG-P9-aPA" secondAttribute="bottom" constant="10" id="9ER-XQ-Kmr"/>
                                     <constraint firstAttribute="bottom" secondItem="uQG-P9-aPA" secondAttribute="bottom" constant="157" id="FkY-rR-Z1D"/>
                                     <constraint firstItem="pbf-rA-hYO" firstAttribute="leading" secondItem="uQG-P9-aPA" secondAttribute="leading" id="GgZ-Bb-lrK"/>
                                     <constraint firstAttribute="trailing" secondItem="rt3-OM-w76" secondAttribute="trailing" id="Jkg-Wu-qFb"/>
                                     <constraint firstItem="pbf-rA-hYO" firstAttribute="leading" secondItem="6dn-01-lXl" secondAttribute="leading" constant="5" id="MVq-XX-cjT"/>
                                     <constraint firstItem="rt3-OM-w76" firstAttribute="top" secondItem="6dn-01-lXl" secondAttribute="top" constant="1" id="MlE-kt-sN1"/>
+                                    <constraint firstAttribute="trailing" secondItem="gyb-rr-Nz8" secondAttribute="trailing" constant="10" id="Oa9-Ud-HAa"/>
                                     <constraint firstItem="pbf-rA-hYO" firstAttribute="top" secondItem="rt3-OM-w76" secondAttribute="bottom" constant="5" id="OyY-cg-vZ8"/>
                                     <constraint firstItem="rt3-OM-w76" firstAttribute="leading" secondItem="6dn-01-lXl" secondAttribute="leading" id="RPF-Mo-fnN"/>
                                     <constraint firstItem="pbf-rA-hYO" firstAttribute="top" secondItem="rt3-OM-w76" secondAttribute="bottom" constant="5" id="S6L-4A-UP9"/>
                                     <constraint firstItem="jUu-Yr-N79" firstAttribute="centerX" secondItem="6dn-01-lXl" secondAttribute="centerX" id="eIR-yM-Mps"/>
+                                    <constraint firstItem="gyb-rr-Nz8" firstAttribute="leading" secondItem="6dn-01-lXl" secondAttribute="leading" constant="10" id="exH-gg-xu4"/>
                                     <constraint firstAttribute="trailing" secondItem="pbf-rA-hYO" secondAttribute="trailing" constant="5" id="iYp-cy-Yij"/>
                                     <constraint firstItem="pbf-rA-hYO" firstAttribute="trailing" secondItem="uQG-P9-aPA" secondAttribute="trailing" id="vcD-CM-s6w"/>
                                     <constraint firstItem="uQG-P9-aPA" firstAttribute="top" secondItem="pbf-rA-hYO" secondAttribute="bottom" constant="5" id="xx7-Yi-4R7"/>
@@ -238,6 +248,7 @@
                     </view>
                     <connections>
                         <outlet property="author" destination="pbf-rA-hYO" id="CGP-0q-9z3"/>
+                        <outlet property="button" destination="gyb-rr-Nz8" id="6Ed-fg-D6Q"/>
                         <outlet property="height" destination="edH-uW-uoJ" id="Ovs-8R-jhR"/>
                         <outlet property="imageFull" destination="rt3-OM-w76" id="SWs-Ke-ABe"/>
                         <outlet property="indicator" destination="jUu-Yr-N79" id="oRI-ng-9jL"/>

@@ -16,10 +16,12 @@ class ScrollViewController: UIViewController {
     @IBOutlet weak var imageFull: UIImageView!
     @IBOutlet weak var width: UILabel!
     
+    @IBOutlet weak var downloadUrl: UILabel!
     @IBOutlet weak var indicator: UIActivityIndicatorView!
     @IBOutlet weak var author: UILabel!
     @IBOutlet weak var height: UILabel!
    
+    @IBOutlet weak var button: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         getImage()
@@ -32,7 +34,15 @@ class ScrollViewController: UIViewController {
         author.text = imageInfoView.author
         width.text = imageInfoView.stringWidth
         height.text = imageInfoView.stringHeight
+        button.setTitle(imageInfoView.url, for: .normal)
         
+    }
+    
+    
+    @IBAction func goToUrl(_ sender: UIButton) {
+        
+        let url = URL(string: imageInfoView.url)
+        UIApplication.shared.open(url!, options: [:], completionHandler: nil)
     }
     
     private func getImage() {
