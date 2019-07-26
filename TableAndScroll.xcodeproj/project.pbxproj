@@ -76,6 +76,8 @@
 		CA51F03022EB6065007DACA3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CA51F03722EB61AC007DACA3 /* CellsOptions.swift */,
+				CA51F03922EB68D2007DACA3 /* ImageOptions.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -94,8 +96,6 @@
 				CA51F02022EB6012007DACA3 /* StartViewController.swift */,
 				CA51F03322EB60F2007DACA3 /* TableViewController.swift */,
 				CA51F03522EB610F007DACA3 /* ScrollViewController.swift */,
-				CA51F03722EB61AC007DACA3 /* CellsOptions.swift */,
-				CA51F03922EB68D2007DACA3 /* ImageOptions.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
