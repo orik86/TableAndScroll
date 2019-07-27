@@ -27,4 +27,17 @@ class FavoritsTableViewController: TableViewController {
         cell.configureCell(imageC: imagecoll)
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        
+        let delete = UITableViewRowAction(style: .default, title: "Delete") { _, _ in
+            self.deleteImage(indexPath: indexPath)
+        }
+        return [delete]
+    }
+    override func deleteImage(indexPath: IndexPath) {
+            self.favoritsColletion.remove(at: indexPath.row)
+            self.tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+    
 }
