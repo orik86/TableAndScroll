@@ -64,7 +64,7 @@ class TableViewController: UITableViewController {
     
     func favoritesImage(indexPath: IndexPath) {
         favoritesImages.append(imagesCollection[indexPath.row])
-        print(favoritesImages)
+   
             
         }
     

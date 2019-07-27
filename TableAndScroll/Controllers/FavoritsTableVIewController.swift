@@ -13,7 +13,6 @@ class FavoritsTableViewController: TableViewController {
     var favoritsColletion: [imageOptions] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(favoritsColletion)
         self.tableView.reloadData()
     }
     
