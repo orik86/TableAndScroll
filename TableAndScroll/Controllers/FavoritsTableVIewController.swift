@@ -13,7 +13,7 @@ class FavoritsTableViewController: TableViewController {
     var favoritsColletion: [imageOptions] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.reloadData()
+     //   self.tableView.reloadData()
     }
     
     
@@ -22,7 +22,7 @@ class FavoritsTableViewController: TableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! cellsOptions
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! cellsOptions2
         let imagecoll = favoritsColletion[indexPath.row]
         cell.configureCell(imageC: imagecoll)
         return cell

@@ -12,9 +12,9 @@ import UIKit
 class cellsOptions2: UITableViewCell {
     
     
-    @IBOutlet weak var imageCol: UIImageView!
+    @IBOutlet var imageCol: UIImageView!
     
-    @IBOutlet weak var imageAuthor: UILabel!
+    @IBOutlet var imageAuthor: UILabel!
     
     func configureCell(imageC: imageOptions) {
         
