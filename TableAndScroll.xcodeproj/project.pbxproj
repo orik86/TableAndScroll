@@ -132,6 +132,7 @@
 				TargetAttributes = {
 					CA51F01A22EB6012007DACA3 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1030;
 					};
 				};
 			};
@@ -331,7 +332,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Aleksandr86.TableAndScroll;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -349,7 +350,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Aleksandr86.TableAndScroll;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
