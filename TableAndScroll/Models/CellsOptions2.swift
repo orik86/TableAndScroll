@@ -14,11 +14,11 @@ class cellsOptions2: UITableViewCell {
     
     @IBOutlet var imageCol: UIImageView!
     
-    @IBOutlet var imageAuthor: UILabel!
+    //@IBOutlet var imageAuthor: UILabel!
     
     func configureCell(imageC: imageOptions) {
         
-        imageAuthor.text = imageC.author
+       // imageAuthor.text = imageC.author
         self.imageCol.image = UIImage(named: "deafaultImage")
         
         DispatchQueue.global().async {

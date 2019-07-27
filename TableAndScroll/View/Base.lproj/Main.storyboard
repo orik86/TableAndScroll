@@ -154,44 +154,32 @@
         <scene sceneID="5hf-q1-XGT">
             <objects>
                 <tableViewController id="VFt-y4-w4D" customClass="FavoritsTableViewController" customModule="TableAndScroll" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="rBz-Ig-76B">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="250" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="rBz-Ig-76B">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="hek-Eb-BVe" customClass="cellsOptions2" customModule="TableAndScroll" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="100"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="250"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hek-Eb-BVe" id="8E0-vb-yum" customClass="cellsOptions2" customModule="TableAndScroll" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="99.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="249.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qBe-L8-PpE">
-                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <rect key="frame" x="10" y="10" width="394" height="250"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="100" id="As9-6c-uBa"/>
-                                                <constraint firstAttribute="height" constant="100" id="BoI-PS-ZXj"/>
+                                                <constraint firstAttribute="width" secondItem="qBe-L8-PpE" secondAttribute="height" multiplier="197:125" id="8Eg-lj-6JZ"/>
+                                                <constraint firstAttribute="height" constant="250" id="cEW-CT-IyQ"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OmD-O3-l9h">
-                                            <rect key="frame" x="105" y="5" width="304" height="29"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="OmD-O3-l9h" firstAttribute="top" secondItem="8E0-vb-yum" secondAttribute="top" constant="5" id="AaO-wf-G8l"/>
-                                        <constraint firstAttribute="trailing" secondItem="OmD-O3-l9h" secondAttribute="trailing" constant="5" id="DrU-ZU-42r"/>
-                                        <constraint firstAttribute="bottom" secondItem="qBe-L8-PpE" secondAttribute="bottom" id="I8D-VR-RxI"/>
-                                        <constraint firstItem="OmD-O3-l9h" firstAttribute="leading" secondItem="qBe-L8-PpE" secondAttribute="trailing" constant="5" id="L6W-cl-Kic"/>
-                                        <constraint firstItem="qBe-L8-PpE" firstAttribute="leading" secondItem="8E0-vb-yum" secondAttribute="leading" id="Qnj-LD-eEQ"/>
-                                        <constraint firstAttribute="bottom" secondItem="OmD-O3-l9h" secondAttribute="bottom" constant="5" id="dg7-Ds-Gpq"/>
-                                        <constraint firstItem="qBe-L8-PpE" firstAttribute="top" secondItem="8E0-vb-yum" secondAttribute="top" id="mOj-9Y-s85"/>
+                                        <constraint firstItem="qBe-L8-PpE" firstAttribute="centerX" secondItem="8E0-vb-yum" secondAttribute="centerX" id="8cg-JO-b3J"/>
+                                        <constraint firstItem="qBe-L8-PpE" firstAttribute="centerY" secondItem="8E0-vb-yum" secondAttribute="centerY" id="K5X-rS-bRG"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="imageAuthor" destination="OmD-O3-l9h" id="djm-y4-7aJ"/>
                                     <outlet property="imageCol" destination="qBe-L8-PpE" id="La4-I2-7D4"/>
                                 </connections>
                             </tableViewCell>
@@ -204,7 +192,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D1T-6a-rcw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2958" y="852"/>
+            <point key="canvasLocation" x="2957.971014492754" y="851.78571428571422"/>
         </scene>
         <!--Scroll View Controller-->
         <scene sceneID="8l9-Qs-vQ2">
