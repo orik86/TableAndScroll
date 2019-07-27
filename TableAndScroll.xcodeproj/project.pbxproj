@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0948456E22ECDCF700DF7C1D /* FavoritsTableVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0948456D22ECDCF700DF7C1D /* FavoritsTableVIewController.swift */; };
+		0948457022ECE2B500DF7C1D /* CellsOptions2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0948456F22ECE2B500DF7C1D /* CellsOptions2.swift */; };
 		CA51F01F22EB6012007DACA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA51F01E22EB6012007DACA3 /* AppDelegate.swift */; };
 		CA51F02122EB6012007DACA3 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA51F02022EB6012007DACA3 /* StartViewController.swift */; };
 		CA51F02422EB6012007DACA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA51F02222EB6012007DACA3 /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0948456D22ECDCF700DF7C1D /* FavoritsTableVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritsTableVIewController.swift; sourceTree = "<group>"; };
+		0948456F22ECE2B500DF7C1D /* CellsOptions2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellsOptions2.swift; sourceTree = "<group>"; };
 		CA51F01B22EB6012007DACA3 /* TableAndScroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableAndScroll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA51F01E22EB6012007DACA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA51F02022EB6012007DACA3 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +81,7 @@
 			children = (
 				CA51F03722EB61AC007DACA3 /* CellsOptions.swift */,
 				CA51F03922EB68D2007DACA3 /* ImageOptions.swift */,
+				0948456F22ECE2B500DF7C1D /* CellsOptions2.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -94,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				CA51F02022EB6012007DACA3 /* StartViewController.swift */,
+				0948456D22ECDCF700DF7C1D /* FavoritsTableVIewController.swift */,
 				CA51F03322EB60F2007DACA3 /* TableViewController.swift */,
 				CA51F03522EB610F007DACA3 /* ScrollViewController.swift */,
 			);
@@ -175,9 +181,11 @@
 				CA51F03622EB610F007DACA3 /* ScrollViewController.swift in Sources */,
 				CA51F03822EB61AC007DACA3 /* CellsOptions.swift in Sources */,
 				CA51F03A22EB68D2007DACA3 /* ImageOptions.swift in Sources */,
+				0948456E22ECDCF700DF7C1D /* FavoritsTableVIewController.swift in Sources */,
 				CA51F03422EB60F2007DACA3 /* TableViewController.swift in Sources */,
 				CA51F02122EB6012007DACA3 /* StartViewController.swift in Sources */,
 				CA51F01F22EB6012007DACA3 /* AppDelegate.swift in Sources */,
+				0948457022ECE2B500DF7C1D /* CellsOptions2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

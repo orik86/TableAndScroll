@@ -14,6 +14,7 @@ class TableViewController: UITableViewController {
     var urlString = ""
 
     var imagesCollection: [imageOptions] = []
+    var favoritesImages: [imageOptions] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +38,10 @@ class TableViewController: UITableViewController {
         let delete = UITableViewRowAction(style: .default, title: "Delete") { _, _ in
             self.deleteImage(indexPath: indexPath)
         }
-        return [delete]
+        let favorite = UITableViewRowAction(style: .default, title: "⭐️") { _, _ in
+            self.favoritesImage(indexPath: indexPath)
+        }
+        return [favorite, delete]
     }
 
  
@@ -47,8 +51,22 @@ class TableViewController: UITableViewController {
                 let imageInfo = segue.destination as! ScrollViewController
                 imageInfo.imageInfoView = imagesCollection[indexPath.row]
             }
+        } else {
+            if segue.identifier == "favoritsSegue" {
+                    let imageInfo = segue.destination as! FavoritsTableViewController
+                    imageInfo.favoritsColletion = favoritesImages
+                }
+            }
         }
+    
+    @IBAction func favoritesGo(_ sender: Any) {
     }
+    
+    func favoritesImage(indexPath: IndexPath) {
+        favoritesImages.append(imagesCollection[indexPath.row])
+        print(favoritesImages)
+            
+        }
     
     func deleteImage(indexPath: IndexPath) {
         self.imagesCollection.remove(at: indexPath.row)
