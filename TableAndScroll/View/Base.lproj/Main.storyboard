@@ -72,6 +72,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="IxE-AG-Af9"/>
                     <connections>
+                        <outlet property="imageSk" destination="G5T-HR-MBn" id="Lee-ER-vxE"/>
                         <outlet property="numbersOfImage" destination="W5y-4H-pyR" id="mCe-zR-nqK"/>
                     </connections>
                 </viewController>
