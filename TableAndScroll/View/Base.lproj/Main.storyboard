@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -27,16 +26,22 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Lk9-mp-MBT">
-                                <rect key="frame" x="0.0" y="681.5" width="414" height="73.5"/>
+                                <rect key="frame" x="0.0" y="636.5" width="414" height="118.5"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select numbers of images" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dI-ib-JQi">
+                                        <rect key="frame" x="73" y="0.0" width="268" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5y-4H-pyR">
-                                        <rect key="frame" x="179.5" y="0.0" width="55" height="27.5"/>
+                                        <rect key="frame" x="179.5" y="45" width="55" height="27.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="hb6-7H-0Jp">
-                                        <rect key="frame" x="8" y="43.5" width="398" height="31"/>
+                                        <rect key="frame" x="8" y="88.5" width="398" height="31"/>
                                         <connections>
                                             <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="B0L-6P-rwA"/>
                                         </connections>
@@ -47,21 +52,18 @@
                                     <constraint firstAttribute="trailing" secondItem="hb6-7H-0Jp" secondAttribute="trailing" constant="10" id="q4e-TT-XmC"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select numbers of images" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dI-ib-JQi">
-                                <rect key="frame" x="73" y="433.5" width="268" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="G5T-HR-MBn">
+                                <rect key="frame" x="55.5" y="118" width="303" height="138"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lk9-mp-MBT" secondAttribute="trailing" id="1XI-cf-2vg"/>
+                            <constraint firstItem="G5T-HR-MBn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="2jo-pk-yQG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zLS-yh-rTP" secondAttribute="bottom" constant="20" id="39k-Bg-Eht"/>
                             <constraint firstItem="Lk9-mp-MBT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3YC-xn-32m"/>
-                            <constraint firstItem="5dI-ib-JQi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9mO-Wf-paC"/>
+                            <constraint firstItem="G5T-HR-MBn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FV7-dL-APi"/>
                             <constraint firstItem="zLS-yh-rTP" firstAttribute="top" secondItem="Lk9-mp-MBT" secondAttribute="bottom" constant="40" id="HYg-B7-IJl"/>
-                            <constraint firstItem="5dI-ib-JQi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J7Z-iu-7Rz"/>
                             <constraint firstItem="zLS-yh-rTP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="OzV-oC-Swe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zLS-yh-rTP" secondAttribute="trailing" constant="30" id="daH-Ko-Kbj"/>
                             <constraint firstItem="Lk9-mp-MBT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nm1-Mj-4fU"/>
@@ -278,4 +280,7 @@
             <point key="canvasLocation" x="1176.8115942028987" y="137.94642857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="title" width="303" height="138"/>
+    </resources>
 </document>

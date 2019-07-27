@@ -62,9 +62,9 @@
 		CA51F01D22EB6012007DACA3 /* TableAndScroll */ = {
 			isa = PBXGroup;
 			children = (
-				CA51F03222EB60B4007DACA3 /* Controllers */,
 				CA51F03022EB6065007DACA3 /* Models */,
 				CA51F03122EB606D007DACA3 /* View */,
+				CA51F03222EB60B4007DACA3 /* Controllers */,
 				CA51F01E22EB6012007DACA3 /* AppDelegate.swift */,
 				CA51F02522EB6013007DACA3 /* Assets.xcassets */,
 				CA51F02A22EB6013007DACA3 /* Info.plist */,
