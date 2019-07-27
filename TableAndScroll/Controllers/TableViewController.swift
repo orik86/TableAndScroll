@@ -32,8 +32,15 @@ class TableViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        
+        let delete = UITableViewRowAction(style: .default, title: "Delete") { _, _ in
+            self.deleteImage(indexPath: indexPath)
+        }
+        return [delete]
+    }
 
-    
+ 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "scrollSegue" {
             if let indexPath = tableView.indexPathForSelectedRow {
@@ -41,6 +48,11 @@ class TableViewController: UITableViewController {
                 imageInfo.imageInfoView = imagesCollection[indexPath.row]
             }
         }
+    }
+    
+    func deleteImage(indexPath: IndexPath) {
+        self.imagesCollection.remove(at: indexPath.row)
+        self.tableView.deleteRows(at: [indexPath], with: .fade)
     }
     
     func LoadData() {
