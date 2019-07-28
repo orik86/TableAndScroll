@@ -35,6 +35,16 @@ class FavoritsTableViewController: TableViewController {
         }
         return [delete]
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       if let indexPath = tableView.indexPathForSelectedRow {
+        if segue.identifier == "favoritsScrollSegue" {
+            let imageInfo = segue.destination as! ScrollViewController
+            imageInfo.imageInfoView = favoritsColletion[indexPath.row]
+            }
+        }
+    }
+    
     override func deleteImage(indexPath: IndexPath) {
             self.favoritsColletion.remove(at: indexPath.row)
             self.tableView.deleteRows(at: [indexPath], with: .fade)

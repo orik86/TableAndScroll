@@ -181,6 +181,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="imageCol" destination="qBe-L8-PpE" id="La4-I2-7D4"/>
+                                    <segue destination="g6i-tf-AiC" kind="show" identifier="favoritsScrollSegue" id="vTh-xD-FyF"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -342,4 +343,7 @@
         <image name="deafaultImage" width="427" height="320"/>
         <image name="title" width="303" height="138"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="vTh-xD-FyF"/>
+    </inferredMetricsTieBreakers>
 </document>
