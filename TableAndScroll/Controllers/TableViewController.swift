@@ -73,12 +73,13 @@ class TableViewController: UITableViewController {
         } else {
             imagesCollection[indexPath.row].id = "✩"
         }
-        favoritesImages.removeAll()
-        for i in 0..<imagesCollection.count  {
-            if imagesCollection[i].favoritesIm == "⭐️" {
-                favoritesImages.append(imagesCollection[i])
-            }
-        }
+        favoritesImages = imagesCollection.filter {$0.id == "⭐️"}
+       // favoritesImages.removeAll()
+       // for i in 0..<imagesCollection.count  {
+       //     if imagesCollection[i].favoritesIm == "⭐️" {
+        //        favoritesImages.append(imagesCollection[i])
+       //     }
+            //}
         }
     
     
