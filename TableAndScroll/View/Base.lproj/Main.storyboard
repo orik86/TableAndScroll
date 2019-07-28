@@ -167,7 +167,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qBe-L8-PpE">
-                                            <rect key="frame" x="10" y="10" width="394" height="250"/>
+                                            <rect key="frame" x="10" y="-0.5" width="394" height="250.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="qBe-L8-PpE" secondAttribute="height" multiplier="197:125" id="8Eg-lj-6JZ"/>
                                                 <constraint firstAttribute="height" constant="250" id="cEW-CT-IyQ"/>

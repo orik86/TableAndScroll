@@ -9,7 +9,7 @@
 import Foundation
 
 struct imageOptions: Decodable {
-    let id: String
+    var id: String
     let author: String
     let width: Int
     let height: Int
@@ -23,5 +23,12 @@ extension imageOptions {
     }
     var stringHeight: String {
         return String(height)
+    }
+    var favoritesIm: String {
+        if id == "⭐️" {
+            return "⭐️"
+        } else {
+            return "✩"
+        }
     }
 }

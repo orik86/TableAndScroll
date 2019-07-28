@@ -27,9 +27,11 @@ class TableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! cellsOptions
         let imagecoll = imagesCollection[indexPath.row]
         cell.configureCell(imageC: imagecoll)
+        
         return cell
     }
     
@@ -38,8 +40,10 @@ class TableViewController: UITableViewController {
         let delete = UITableViewRowAction(style: .default, title: "Delete") { _, _ in
             self.deleteImage(indexPath: indexPath)
         }
-        let favorite = UITableViewRowAction(style: .default, title: "⭐️") { _, _ in
+        let symbol = imagesCollection[indexPath.row].favoritesIm
+        let favorite = UITableViewRowAction(style: .default, title: symbol) { _, _ in
             self.favoritesImage(indexPath: indexPath)
+            
         }
         return [favorite, delete]
     }
@@ -62,11 +66,21 @@ class TableViewController: UITableViewController {
     @IBAction func favoritesGo(_ sender: Any) {
     }
     
+    
     func favoritesImage(indexPath: IndexPath) {
-        favoritesImages.append(imagesCollection[indexPath.row])
-   
-            
+        if imagesCollection[indexPath.row].id != "⭐️" {
+            imagesCollection[indexPath.row].id = "⭐️"
+        } else {
+            imagesCollection[indexPath.row].id = "✩"
         }
+        favoritesImages.removeAll()
+        for i in 0..<imagesCollection.count  {
+            if imagesCollection[i].favoritesIm == "⭐️" {
+                favoritesImages.append(imagesCollection[i])
+            }
+        }
+        }
+    
     
     func deleteImage(indexPath: IndexPath) {
         self.imagesCollection.remove(at: indexPath.row)
