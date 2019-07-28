@@ -15,6 +15,8 @@ struct imageOptions: Decodable {
     let height: Int
     let url: String
     let download_url: String
+    var favorites: String? = "✩"
+    
 }
 
 extension imageOptions {
@@ -25,7 +27,7 @@ extension imageOptions {
         return String(height)
     }
     var favoritesIm: String {
-        if id == "⭐️" {
+        if favorites == "⭐️" {
             return "⭐️"
         } else {
             return "✩"

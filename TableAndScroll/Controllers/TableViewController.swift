@@ -68,12 +68,12 @@ class TableViewController: UITableViewController {
     
     
     func favoritesImage(indexPath: IndexPath) {
-        if imagesCollection[indexPath.row].id != "⭐️" {
-            imagesCollection[indexPath.row].id = "⭐️"
+        if imagesCollection[indexPath.row].favorites != "⭐️" {
+            imagesCollection[indexPath.row].favorites = "⭐️"
         } else {
-            imagesCollection[indexPath.row].id = "✩"
+            imagesCollection[indexPath.row].favorites = "✩"
         }
-        favoritesImages = imagesCollection.filter {$0.id == "⭐️"}
+        favoritesImages = imagesCollection.filter {$0.favorites == "⭐️"}
        // favoritesImages.removeAll()
        // for i in 0..<imagesCollection.count  {
        //     if imagesCollection[i].favoritesIm == "⭐️" {
