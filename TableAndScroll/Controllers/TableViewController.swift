@@ -58,6 +58,7 @@ class TableViewController: UITableViewController {
         } else {
             if segue.identifier == "favoritsSegue" {
                     let imageInfo = segue.destination as! FavoritsTableViewController
+                favoritesImages = imagesCollection.filter {$0.favorites == true}
                     imageInfo.favoritsColletion = favoritesImages
                 }
             }
@@ -68,19 +69,11 @@ class TableViewController: UITableViewController {
     
     
     func favoritesImage(indexPath: IndexPath) {
-        if imagesCollection[indexPath.row].favorites != "⭐️" {
-            imagesCollection[indexPath.row].favorites = "⭐️"
-        } else {
-            imagesCollection[indexPath.row].favorites = "✩"
+    
+        if let fav = imagesCollection[indexPath.row].favorites { imagesCollection[indexPath.row].favorites = !fav } else {
+         imagesCollection[indexPath.row].favorites = true
         }
-        favoritesImages = imagesCollection.filter {$0.favorites == "⭐️"}
-       // favoritesImages.removeAll()
-       // for i in 0..<imagesCollection.count  {
-       //     if imagesCollection[i].favoritesIm == "⭐️" {
-        //        favoritesImages.append(imagesCollection[i])
-       //     }
-            //}
-        }
+    }
     
     
     func deleteImage(indexPath: IndexPath) {
