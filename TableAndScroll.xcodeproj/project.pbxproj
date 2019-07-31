@@ -18,6 +18,7 @@
 		CA51F03622EB610F007DACA3 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA51F03522EB610F007DACA3 /* ScrollViewController.swift */; };
 		CA51F03822EB61AC007DACA3 /* CellsOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA51F03722EB61AC007DACA3 /* CellsOptions.swift */; };
 		CA51F03A22EB68D2007DACA3 /* ImageOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA51F03922EB68D2007DACA3 /* ImageOptions.swift */; };
+		CA51F04022F22DEC007DACA3 /* AddTableViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA51F03F22F22DEC007DACA3 /* AddTableViewControllers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		CA51F03522EB610F007DACA3 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		CA51F03722EB61AC007DACA3 /* CellsOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellsOptions.swift; sourceTree = "<group>"; };
 		CA51F03922EB68D2007DACA3 /* ImageOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageOptions.swift; sourceTree = "<group>"; };
+		CA51F03F22F22DEC007DACA3 /* AddTableViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTableViewControllers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				0948456D22ECDCF700DF7C1D /* FavoritsTableVIewController.swift */,
 				CA51F03322EB60F2007DACA3 /* TableViewController.swift */,
 				CA51F03522EB610F007DACA3 /* ScrollViewController.swift */,
+				CA51F03F22F22DEC007DACA3 /* AddTableViewControllers.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				CA51F03622EB610F007DACA3 /* ScrollViewController.swift in Sources */,
 				CA51F03822EB61AC007DACA3 /* CellsOptions.swift in Sources */,
 				CA51F03A22EB68D2007DACA3 /* ImageOptions.swift in Sources */,
+				CA51F04022F22DEC007DACA3 /* AddTableViewControllers.swift in Sources */,
 				0948456E22ECDCF700DF7C1D /* FavoritsTableVIewController.swift in Sources */,
 				CA51F03422EB60F2007DACA3 /* TableViewController.swift in Sources */,
 				CA51F02122EB6012007DACA3 /* StartViewController.swift in Sources */,
