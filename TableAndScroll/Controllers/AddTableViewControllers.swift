@@ -16,6 +16,9 @@ class AddTableViewController: UITableViewController, UIImagePickerControllerDele
     @IBOutlet var loadWidth: UILabel!
     @IBOutlet var loadHeight: UILabel!
     @IBOutlet var imageView: UIImageView!
+
+    @IBOutlet var saveButton: UIBarButtonItem!
+    
     
     override func viewDidLoad()
     {
@@ -24,6 +27,7 @@ class AddTableViewController: UITableViewController, UIImagePickerControllerDele
        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(AddTableViewController.tappedImage))
         imageView.isUserInteractionEnabled = true
         imageView.addGestureRecognizer(tapGestureRecognizer)
+        saveButton.isEnabled = false
     }
 
  
@@ -43,6 +47,7 @@ class AddTableViewController: UITableViewController, UIImagePickerControllerDele
         let urlString: String = imageMyUrl.absoluteString!
         addImage.download_url = urlString
         if let size = image?.size {
+            saveButton.isEnabled = true
             loadWidth.text = String(Int(size.width))
             addImage.width = Int(size.width)
             loadHeight.text = String(Int(size.height))

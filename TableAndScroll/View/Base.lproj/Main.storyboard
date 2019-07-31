@@ -314,6 +314,7 @@
                         <outlet property="loadAuthor" destination="jdD-Ji-xnh" id="CTW-SX-aaI"/>
                         <outlet property="loadHeight" destination="w2V-pd-KsX" id="fzq-6W-bcg"/>
                         <outlet property="loadWidth" destination="K8V-Sb-Jmw" id="mtd-Wk-iUk"/>
+                        <outlet property="saveButton" destination="kNk-Vj-QGT" id="zmC-a8-Yv0"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sHX-Tj-zGb" userLabel="First Responder" sceneMemberID="firstResponder"/>
