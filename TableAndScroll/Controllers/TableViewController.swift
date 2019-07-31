@@ -45,6 +45,8 @@ class TableViewController: UITableViewController {
             self.favoritesImage(indexPath: indexPath)
             
         }
+        
+        favorite.backgroundColor = UIColor.blue
         return [favorite, delete]
     }
 
