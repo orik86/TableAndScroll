@@ -105,3 +105,23 @@ class TableViewController: UITableViewController {
     }
     
 }
+
+
+extension TableViewController {
+    
+    @IBAction func unwind(_ segue: UIStoryboardSegue) {
+        guard segue.identifier == "saveSegue" else { return }
+        
+        let source = segue.source as! AddTableViewController
+        let newImage = source.addImage
+        if let selectedPath = tableView.indexPathForSelectedRow {
+            imagesCollection[selectedPath.row] = newImage
+            tableView.reloadRows(at: [selectedPath], with: .automatic)
+        } else {
+            let indexPath = IndexPath(row: imagesCollection.count, section: 0)
+            imagesCollection.append(newImage)
+            tableView.insertRows(at: [indexPath], with: .automatic)
+        }
+        
+}
+}

@@ -49,6 +49,7 @@ class AddTableViewController: UITableViewController, UIImagePickerControllerDele
             addImage.height = Int(size.height)
             let username = UIDevice.current.name
             loadAuthor.text = username
+            addImage.author = loadAuthor.text!
         }
         picker.dismiss(animated: true, completion: nil)
     }
