@@ -8,9 +8,11 @@
 
 import UIKit
 
-class ScrollViewController: UIViewController {
+class ScrollViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     var imageInfoView: imageOptions!
+    var myImage: UIImage?
+    
     
     
     @IBOutlet weak var imageFull: UIImageView!
@@ -25,6 +27,7 @@ class ScrollViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         getImage()
+        imageFull.isUserInteractionEnabled = true
         fillAll()
         indicator.startAnimating()
         indicator.hidesWhenStopped = true
@@ -67,4 +70,31 @@ class ScrollViewController: UIViewController {
                 }
                 }.resume()
     }
+    
+
+    
+    @IBAction func picker(_ sender: Any) {
+    
+        let imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        present(imagePicker, animated: true, completion: nil)
+    }
+ 
+
+    public func imagePickerController(_ picker: UIImagePickerController,
+                                      didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
+       // if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            //self.imageFull.image = image
+            let imageMyUrl = info[UIImagePickerController.InfoKey.imageURL] as! NSURL
+            let urlString: String = imageMyUrl.absoluteString!
+            imageInfoView.download_url = urlString
+            picker.dismiss(animated: true, completion: nil)
+        getImage()
+      }
+
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }
+

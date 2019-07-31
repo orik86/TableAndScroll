@@ -274,6 +274,13 @@
                                             <action selector="goToUrl:" destination="g6i-tf-AiC" eventType="touchUpInside" id="xq1-tX-Zet"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Oy-6E-e9B">
+                                        <rect key="frame" x="152.5" y="616.5" width="99" height="30"/>
+                                        <state key="normal" title="Change Image"/>
+                                        <connections>
+                                            <action selector="picker:" destination="g6i-tf-AiC" eventType="touchUpInside" id="OtJ-A2-gf3"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="pbf-rA-hYO" firstAttribute="leading" secondItem="6dn-01-lXl" secondAttribute="leading" constant="5" id="31Z-mX-PeH"/>
@@ -289,9 +296,11 @@
                                     <constraint firstItem="pbf-rA-hYO" firstAttribute="top" secondItem="rt3-OM-w76" secondAttribute="bottom" constant="5" id="OyY-cg-vZ8"/>
                                     <constraint firstItem="rt3-OM-w76" firstAttribute="leading" secondItem="6dn-01-lXl" secondAttribute="leading" id="RPF-Mo-fnN"/>
                                     <constraint firstItem="pbf-rA-hYO" firstAttribute="top" secondItem="rt3-OM-w76" secondAttribute="bottom" constant="5" id="S6L-4A-UP9"/>
+                                    <constraint firstItem="2Oy-6E-e9B" firstAttribute="top" secondItem="gyb-rr-Nz8" secondAttribute="bottom" constant="20" id="bNH-ky-zJF"/>
                                     <constraint firstItem="jUu-Yr-N79" firstAttribute="centerX" secondItem="6dn-01-lXl" secondAttribute="centerX" id="eIR-yM-Mps"/>
                                     <constraint firstItem="gyb-rr-Nz8" firstAttribute="leading" secondItem="6dn-01-lXl" secondAttribute="leading" constant="10" id="exH-gg-xu4"/>
                                     <constraint firstAttribute="trailing" secondItem="pbf-rA-hYO" secondAttribute="trailing" constant="5" id="iYp-cy-Yij"/>
+                                    <constraint firstItem="2Oy-6E-e9B" firstAttribute="centerX" secondItem="6dn-01-lXl" secondAttribute="centerX" id="mXg-Hh-WIA"/>
                                     <constraint firstItem="pbf-rA-hYO" firstAttribute="trailing" secondItem="uQG-P9-aPA" secondAttribute="trailing" id="vcD-CM-s6w"/>
                                     <constraint firstItem="uQG-P9-aPA" firstAttribute="top" secondItem="pbf-rA-hYO" secondAttribute="bottom" constant="5" id="xx7-Yi-4R7"/>
                                 </constraints>
