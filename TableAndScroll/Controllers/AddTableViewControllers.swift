@@ -16,30 +16,25 @@ class AddTableViewController: UITableViewController, UIImagePickerControllerDele
     @IBOutlet var loadWidth: UILabel!
     @IBOutlet var loadHeight: UILabel!
     @IBOutlet var imageView: UIImageView!
-
     @IBOutlet var saveButton: UIBarButtonItem!
     
-    
-    override func viewDidLoad()
-    {
+    override func viewDidLoad() {
         super.viewDidLoad()
         
-       let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(AddTableViewController.tappedImage))
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(AddTableViewController.tappedImage))
         imageView.isUserInteractionEnabled = true
         imageView.addGestureRecognizer(tapGestureRecognizer)
         saveButton.isEnabled = false
     }
 
- 
     @objc func tappedImage() {
         let imagePicker = UIImagePickerController()
         imagePicker.delegate = self
         present(imagePicker, animated: true, completion: nil)
     }
-    
+
     public func imagePickerController(_ picker: UIImagePickerController,
                                       didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
-        
         
         let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
         imageView.image = image

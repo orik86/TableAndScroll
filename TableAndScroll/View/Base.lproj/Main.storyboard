@@ -302,7 +302,11 @@
                     </tableView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Add Photo" id="VfU-gb-Lqm">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="9g1-Wz-6oi"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="9g1-Wz-6oi">
+                            <connections>
+                                <segue destination="kLY-oO-wBK" kind="unwind" unwindAction="unwind:" id="LUI-lj-fpa"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="save" id="kNk-Vj-QGT">
                             <connections>
                                 <segue destination="kLY-oO-wBK" kind="unwind" identifier="saveSegue" unwindAction="unwind:" id="UOo-hK-HkM"/>
