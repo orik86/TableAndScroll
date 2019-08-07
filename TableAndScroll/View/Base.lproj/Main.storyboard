@@ -405,12 +405,27 @@
                                             <action selector="goToUrl:" destination="g6i-tf-AiC" eventType="touchUpInside" id="xq1-tX-Zet"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbr-3u-R7f">
+                                        <rect key="frame" x="18" y="606.5" width="368" height="30"/>
+                                        <state key="normal" title="Send to E-mail"/>
+                                        <connections>
+                                            <action selector="sendEmail:" destination="g6i-tf-AiC" eventType="touchUpInside" id="d0d-9a-ckQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SbS-MC-bQv">
+                                        <rect key="frame" x="18" y="646.5" width="368" height="30"/>
+                                        <state key="normal" title="Send SMS"/>
+                                        <connections>
+                                            <action selector="sendSMS:" destination="g6i-tf-AiC" eventType="touchUpInside" id="wVY-8m-TSV"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="pbf-rA-hYO" firstAttribute="leading" secondItem="6dn-01-lXl" secondAttribute="leading" constant="5" id="31Z-mX-PeH"/>
                                     <constraint firstItem="rt3-OM-w76" firstAttribute="centerX" secondItem="6dn-01-lXl" secondAttribute="centerX" id="5k9-Y2-1AF"/>
                                     <constraint firstItem="jUu-Yr-N79" firstAttribute="centerY" secondItem="6dn-01-lXl" secondAttribute="centerY" multiplier="0.6" id="7gt-0x-XVc"/>
                                     <constraint firstItem="gyb-rr-Nz8" firstAttribute="top" secondItem="uQG-P9-aPA" secondAttribute="bottom" constant="10" id="9ER-XQ-Kmr"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="hbr-3u-R7f" secondAttribute="trailing" constant="10" id="Dst-bb-63F"/>
                                     <constraint firstAttribute="bottom" secondItem="uQG-P9-aPA" secondAttribute="bottom" constant="157" id="FkY-rR-Z1D"/>
                                     <constraint firstItem="pbf-rA-hYO" firstAttribute="leading" secondItem="uQG-P9-aPA" secondAttribute="leading" id="GgZ-Bb-lrK"/>
                                     <constraint firstAttribute="trailing" secondItem="rt3-OM-w76" secondAttribute="trailing" id="Jkg-Wu-qFb"/>
@@ -418,11 +433,16 @@
                                     <constraint firstItem="rt3-OM-w76" firstAttribute="top" secondItem="6dn-01-lXl" secondAttribute="top" constant="1" id="MlE-kt-sN1"/>
                                     <constraint firstAttribute="trailing" secondItem="gyb-rr-Nz8" secondAttribute="trailing" constant="10" id="Oa9-Ud-HAa"/>
                                     <constraint firstItem="pbf-rA-hYO" firstAttribute="top" secondItem="rt3-OM-w76" secondAttribute="bottom" constant="5" id="OyY-cg-vZ8"/>
+                                    <constraint firstItem="SbS-MC-bQv" firstAttribute="top" secondItem="hbr-3u-R7f" secondAttribute="bottom" constant="10" id="P54-G4-Z32"/>
                                     <constraint firstItem="rt3-OM-w76" firstAttribute="leading" secondItem="6dn-01-lXl" secondAttribute="leading" id="RPF-Mo-fnN"/>
+                                    <constraint firstItem="hbr-3u-R7f" firstAttribute="top" secondItem="gyb-rr-Nz8" secondAttribute="bottom" constant="10" id="RhH-3p-CSx"/>
                                     <constraint firstItem="pbf-rA-hYO" firstAttribute="top" secondItem="rt3-OM-w76" secondAttribute="bottom" constant="5" id="S6L-4A-UP9"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="SbS-MC-bQv" secondAttribute="trailing" constant="10" id="Tbp-XR-6zT"/>
+                                    <constraint firstItem="hbr-3u-R7f" firstAttribute="leading" secondItem="6dn-01-lXl" secondAttribute="leadingMargin" constant="10" id="ZwO-cw-dOh"/>
                                     <constraint firstItem="jUu-Yr-N79" firstAttribute="centerX" secondItem="6dn-01-lXl" secondAttribute="centerX" id="eIR-yM-Mps"/>
                                     <constraint firstItem="gyb-rr-Nz8" firstAttribute="leading" secondItem="6dn-01-lXl" secondAttribute="leading" constant="10" id="exH-gg-xu4"/>
                                     <constraint firstAttribute="trailing" secondItem="pbf-rA-hYO" secondAttribute="trailing" constant="5" id="iYp-cy-Yij"/>
+                                    <constraint firstItem="SbS-MC-bQv" firstAttribute="leading" secondItem="6dn-01-lXl" secondAttribute="leadingMargin" constant="10" id="tPx-XE-wPo"/>
                                     <constraint firstItem="pbf-rA-hYO" firstAttribute="trailing" secondItem="uQG-P9-aPA" secondAttribute="trailing" id="vcD-CM-s6w"/>
                                     <constraint firstItem="uQG-P9-aPA" firstAttribute="top" secondItem="pbf-rA-hYO" secondAttribute="bottom" constant="5" id="xx7-Yi-4R7"/>
                                 </constraints>
