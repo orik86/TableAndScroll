@@ -102,7 +102,6 @@ class ScrollViewController: UIViewController, UIImagePickerControllerDelegate, U
                     self.emailTextF = textEmail.text ?? ""
                     let mailComposer = MFMailComposeViewController()
                     mailComposer.mailComposeDelegate = self
-                    print(">>>>>>>>>>>>", self.emailAdressF)
                     mailComposer.setToRecipients([self.emailAdressF])
                     mailComposer.setSubject(self.emailSubjectF)
                     mailComposer.setMessageBody(self.emailTextF, isHTML: false)
@@ -141,12 +140,6 @@ class ScrollViewController: UIViewController, UIImagePickerControllerDelegate, U
             smsComposer.recipients = [numbersTel]
             let message = textSMS.text ?? ""
             smsComposer.body = message
-          //  let ext = self.imageFull.image.
-          //  switch ext {
-          //      case "jpg": imageData = self.imageFull.image!.jpegData(compressionQuality: 1)! as NSData
-          //      case "png": imageData = self.imageFull.image!.pngData()! as NSData
-          //      default: print("что то пошло не так ", ext)
-        //    }
             let imageData: NSData = self.imageFull.image!.jpegData(compressionQuality: 1)! as NSData
             smsComposer.addAttachmentData(imageData as Data, typeIdentifier: "image/jpeg", filename: self.imageInfoView.download_url + ".jpg")
             self.present(smsComposer, animated: true)
